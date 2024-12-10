@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montagem de estores, persianas e toldos sob medida. Realizamos instalações em diversas opções e modelos.">
+    <title>Montador de Estores, Persianas e Toldos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #e74c3c, #7a1f1f); /* Alterado para vermelho */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e74c3c; /* Alterado para vermelho */
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: #ffffff;
+        }
+
+        .contact-info span {
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #e74c3c; /* Alterado para vermelho */
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .service-card, .project-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover, .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3, .project-card h3 {
+            color: #e74c3c; /* Alterado para vermelho */
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p, .project-card p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container input:focus, .form-container textarea:focus {
+            border-color: #e74c3c; /* Alterado para vermelho */
+            outline: none;
+        }
+
+        .form-container button {
+            padding: 15px 25px;
+            background-color: #e74c3c; /* Alterado para vermelho */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #c0392b; /* Alterado para vermelho mais escuro */
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        .button-primary {
+            background-color: #e74c3c; /* Alterado para vermelho */
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .button-primary:hover {
+            background-color: #c0392b; /* Alterado para vermelho mais escuro */
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .contact-icons a {
+            margin: 0 15px;
+            color: #e74c3c; /* Alterado para vermelho */
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #c0392b; /* Alterado para vermelho mais escuro */
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Montador de Estores, Persianas e Toldos</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <p><span>Telefone:</span> +365 93 487 53 32</p>
+        <p><span>WhatsApp:</span> <a href="https://wa.me/934875332" target="_blank">Clique para falar</a></p>
+    </div>
+</header>
+
+<section id="home">
+    <h2>Bem-vindo à Solução Completa em Instalação de Estores, Persianas e Toldos</h2>
+    <p>Somos especialistas em montagem e instalação de estores, persianas e toldos, oferecendo produtos de qualidade e soluções sob medida para a sua casa ou empresa. Com nossa experiência, garantimos o melhor resultado para o seu ambiente.</p>
+    <a href="#contato" class="button-primary">Solicite seu Orçamento</a>
+</section>
+
+<section id="servicos">
+    <h2>Serviços</h2>
+    <div class="grid">
+        <div class="service-card">
+            <h3>Instalação de Estores</h3>
+            <p>Oferecemos estores de diversos modelos, incluindo estores de rolo, estores de lamelas e estores automáticos.</p>
+            <a href="#contato" class="button-primary">Contratar</a>
+        </div>
+        <div class="service-card">
+            <h3>Instalação de Persianas</h3>
+            <p>Trabalhamos com persianas internas e externas, em diversos materiais como madeira, alumínio e PVC.</p>
+            <a href="#contato" class="button-primary">Contratar</a>
+        </div>
+        <div class="service-card">
+            <h3>Instalação de Toldos</h3>
+            <p>Instalamos toldos retráteis e fixos para proteger sua área externa contra sol e chuva, com uma variedade de modelos.</p>
+            <a href="#contato" class="button-primary">Contratar</a>
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galeria de Projetos</h2>
+    <div class="grid">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300?text=Estores+modernos" alt="Estores modernos" class="project-image">
+            <h3>Estores modernos para escritório</h3>
+            <p>Instalação de estores personalizados para escritórios com elegância e funcionalidade.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300?text=Persianas+elegantes" alt="Persianas elegantes" class="project-image">
+            <h3>Persianas elegantes em apartamento</h3>
+            <p>Persianas de madeira para um toque sofisticado e controle de luz ideal.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300?text=Toldo+retrátil" alt="Toldo retrátil" class="project-image">
+            <h3>Toldo retrátil instalado em área externa</h3>
+            <p>Instalação de toldos retráteis para proteção solar e máxima praticidade.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <div class="form-container">
+        <h3>Solicite seu Orçamento</h3>
+        <form action="https://formspree.io/f/xjkvdebp" method="POST"> <!-- Link do Formspree atualizado -->
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+            <label for="serviço">Tipo de Serviço:</label>
+            <select id="serviço" name="serviço">
+                <option value="orcamento">Pedir Orçamento</option> <!-- Nova opção adicionada -->
+                <option value="estores">Instalação de Estores</option>
+                <option value="persianas">Instalação de Persianas</option>
+                <option value="toldos">Instalação de Toldos</option>
+                
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>DESCRIÇÃO</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Montador de Estores, Persianas e Toldos | Todos os direitos reservados</p>
+    <div class="contact-icons">
+        <a href="tel:+365934875332" target="_blank">📞</a>
+        <a href="https://wa.me/934875332" target="_blank">💬</a>
+    </div>
+</footer>
+
+</body>
+</html>
